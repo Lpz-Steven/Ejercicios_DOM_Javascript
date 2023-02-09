@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" data-dark>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body data-dark >
+    <header class="header">
+        <h1 >Ejercicios del DOM</h1>
+    </header>
+    <button class="panel-btn hamburger hamburger--vortex" type="button" >
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <button  class="arrow animado" type="button">
+        <a href="index.html#seccion1"><i class='bx bxs-up-arrow-circle'></i></a>
+    </button>
+    <aside class="panel">
+        <nav class="menu">
+            <a href="#seccion1" class="seccion">Seccion 1</a>
+            <a href="#seccion2" class="seccion">Seccion 2</a>
+            <a href="#seccion3" class="seccion">Seccion 3</a>
+            <a href="#seccion4" class="seccion">Seccion 4</a>
+            <a href="#seccion5" class="seccion">Seccion 5</a>
+            <a href="#seccion6" class="seccion">Seccion 6</a>
+            <a href="#seccion7" class="seccion">Seccion 7</a>
+            <a href="#seccion8" class="seccion">Seccion 8</a>
+            <a href="#seccion9" class="seccion">Seccion 9</a>
+            <a href="#seccion10" class="seccion">Seccion 10</a>
+        </nav>
+    </aside>
+    <main>
+        <section  id="seccion1" class="section">
+            <h2 id="h2" data-dark>Reloj Digital y Alarma Sonora</h2>
+            <div id="reloj"></div>
+            <div>
+            <button id="boton1">Iniciar Reloj</button>
+            <button id="boton2">Detener Reloj</button>
+            <button id="boton3">Iniciar Alarma</button>
+            <button id="boton4">Detener Alarma</button>
+            </div>
+        </section>
+        <section id="seccion2" class="section">
+            <h2 id="h2" data-dark>Seccion 2</h2>
+            <div class="contenedor">
+                <article class="field">
+                    <img src="assets/tiger-tank.gif" alt="" class="tank turnRight" id="tiger">
+                </article>
+            </div>
+        </section>
+        <section id="seccion3" class="section">
+            <h2 data-dark>cuenta regresiva </h2>
+            <div id="clock"></div>
+        </section>
+        <section id="seccion4" class="section">
+            <h2 >Responsive con Javascript</h2>
+            <div id="youtube"></div>
+            <d iv id="gmaps"></d>
+            
+        </section>
+        <section id="seccion5" class="section">
+            <h2 >responsive tester</h2>
+            <form id="responsive-tester">
+                <input name="direccion" type="url" placeholder="link" id="link" required>
+                <input name="ancho" type="text" placeholder="width" required>
+                <input name="alto" type="text" placeholder="heigth" required>
+                <input name="probar" type="submit" value="Abrir">
+                <input id="cerrar" name="cerrar" type="button" value="Cerrar">
+            </form>
+        </section>
+        <button class="dark-theme-btn">☀️🌙</button>
+        <section id="seccion6" class="section">
+            <h2>Deteccion de dispositivos <br>User agent</h2>
+            <div id="user-device"></div>
+        </section>
+        <section id="seccion7" class="section ">
+            <h2>Conexion a internet</h2>
+            <div id="alert-conexion1" class="">
+                <h4>Conectado a internet</h4>
+            </div>
+            <div id="alert-conexion2" >
+                <h4>Conexion perdida</h4>
+            </div>
+        </section>
+        <section id="seccion8" class="section">
+            <h2>Camara</h2>
+            <div class="video-div" >
+                <video src="" id="video" playsinline autoplay></video>
+            </div>
+            <canvas id="canvas" width="440" height="280"></canvas>
+        </section>
+        <section id="seccion9" class="section">
+            <h2>Geolocalizacion</h2>
+            <div id="localizacion"></div>
+        </section>
+        <section id="seccion10" class="section">
+            <h2>Buscador</h2>
+            <div>
+                <input type="text" name="buscador" id="buscador" placeholder="Buscar">
+            </div>
+            <div class="contenedor-grid">
+                <div class="content estilos">Yellow</div>
+                <div class="content estilos">orange</div>
+                <div class="content estilos">pink</div>
+                <div class="content estilos">red</div>
+                <div class="content estilos">blue</div>
+                <div class="content estilos">violet</div>
+                <div class="content estilos">red</div>
+                <div class="content estilos">black</div>
+                <div class="content estilos">gray</div>
+                <div class="content estilos">green</div>
+                <div class="content estilos">purple</div>
+                <div class="content estilos">brown</div>
+            </div>
+        </section>
+    </main>
+    <script src="camara.js"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
